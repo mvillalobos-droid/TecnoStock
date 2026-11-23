@@ -1,0 +1,167 @@
+:root {
+    --tecnostock-tinta: #14253e;
+    --tecnostock-acento: #1859aa;
+    --tecnostock-fondo: #edf2f8;
+    --tecnostock-borde: #d8e2ee;
+}
+
+body {
+    color: var(--tecnostock-tinta);
+    background: var(--tecnostock-fondo);
+}
+
+.pagina-acceso {
+    padding-block: clamp(1rem, 4vh, 2rem);
+}
+
+/* La cuadrícula de Bootstrap apila la marca y el formulario en pantallas angostas. */
+.tarjeta-acceso {
+    width: min(100%, 55rem);
+    border: 1px solid var(--tecnostock-borde);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1.75rem 4.5rem rgba(27, 47, 74, 0.13);
+}
+
+.marca-acceso {
+    padding: clamp(1.6rem, 4vw, 3rem);
+    background: radial-gradient(ellipse at top right, #225289, #122844 70%);
+    color: #fff;
+}
+
+.nombre-marca {
+    font-size: clamp(2rem, 4.7vw, 3rem);
+    font-weight: 740;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+}
+
+.descripcion-marca {
+    max-width: 26ch;
+    color: #d9e9fe;
+    font-size: 1.125rem;
+}
+
+.formulario-acceso {
+    padding: clamp(1.5rem, 4vw, 3rem);
+    align-self: center;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.formulario-acceso .form-control,
+.formulario-acceso .btn {
+    min-height: 2.75rem;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--tecnostock-acento);
+    --bs-btn-border-color: var(--tecnostock-acento);
+    --bs-btn-hover-bg: #114683;
+    --bs-btn-hover-border-color: #114683;
+    --bs-btn-active-bg: #0e3d74;
+    --bs-btn-active-border-color: #0e3d74;
+}
+
+.barra-panel {
+    background: #fff;
+    border-bottom: 1px solid var(--tecnostock-borde);
+}
+
+.nombre-marca-panel {
+    color: var(--tecnostock-tinta);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nombre-marca-panel:hover {
+    text-decoration: underline;
+}
+
+.bienvenida-panel {
+    max-width: 46rem;
+    background: #fff;
+    border: 1px solid var(--tecnostock-borde);
+    border-left: 0.3rem solid var(--tecnostock-acento);
+    border-radius: 1rem;
+}
+
+.enlace-catalogo {
+    padding: 0.45rem 0.7rem;
+    color: var(--tecnostock-acento);
+    font-weight: 600;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.enlace-catalogo:hover,
+.enlace-catalogo[aria-current="page"] {
+    background: #e6effa;
+    color: #164a8c;
+}
+
+.superficie-catalogo {
+    background: #fff;
+    border: 1px solid var(--tecnostock-borde);
+    border-radius: 0.85rem;
+}
+
+.campo-busqueda {
+    width: auto;
+    min-width: 0;
+    flex: 1 1 14rem;
+}
+
+.tabla-catalogo {
+    --bs-table-color: var(--tecnostock-tinta);
+    --bs-table-border-color: var(--tecnostock-borde);
+}
+
+.tabla-catalogo > :not(caption) > * > * {
+    padding: 0.85rem 0.8rem;
+}
+
+.tabla-catalogo thead {
+    background: #f4f7fb;
+    box-shadow: inset 0 1px var(--tecnostock-borde);
+}
+
+.estado-producto,
+.alerta-stock,
+.tipo-salida {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.35rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.estado-activo {
+    color: #196241;
+    background: #e2f3e9;
+}
+
+.estado-inactivo {
+    color: #485562;
+    background: #edf1f4;
+}
+
+.alerta-stock,
+.tipo-salida {
+    color: #764c0d;
+    background: #fff0ce;
+}
+
+.formulario-producto,
+.formulario-movimiento {
+    max-width: 51rem;
+}
+
+.observacion-movimiento {
+    max-width: 21rem;
+    overflow-wrap: anywhere;
+}
